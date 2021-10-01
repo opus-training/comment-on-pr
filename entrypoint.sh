@@ -10,7 +10,7 @@ event = JSON.parse(json)
 github = Octokit::Client.new(access_token: ENV["GITHUB_TOKEN"])
 
 message = ARGV[0]
-delete_prev_regex_msg = ARGV[2]
+delete_prev_regex_msg = ARGV[1]
 
 repo = event["repository"]["full_name"]
 
